@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>You are hacked</title>
-  
-<style type="text/css">
-  body {
+  <style>
+    body {
   margin: 0;
   padding: 5vh 5vw;
   background: black;
@@ -60,17 +59,16 @@ p {
   100% {
     opacity: 1;
   }
-}
-</style>
+    }</style>
+
+
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="msg">You are being hacked.</div>
+
+  <div class="msg">You are being hacked</div>
 <div id="console">
 </div>
-<!-- partial -->
-  <script >
-    var intervalID = window.setInterval(updateScreen, 200);
+<script>var intervalID = window.setInterval(updateScreen, 200);
 var c = document.getElementById("console");
 
 var txt = [
@@ -114,8 +112,6 @@ function updateScreen() {
     c.removeChild(c.firstChild);
   }
   c.appendChild(docfrag);
-}
-  </script>
-
+}</script>
 </body>
 </html>
